@@ -1,0 +1,191 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main {
+    height:100vh;
+    background-color: black;
+    position: relative;
+    
+}
+main > div {
+    position:relative;
+}
+
+
+/* ---------------------------------- explosie 1 --------------------------------- */
+
+main > div:first-of-type {
+    position:absolute;
+    top:10em;
+    left:20em;
+}
+
+div:first-of-type div {
+    position:absolute;
+    left: -2px;
+    bottom: 0;
+    width: 4px;
+    height: 80px;
+    transform-origin: 50% 100%;
+    overflow: hidden;
+    transform: rotate(calc(30deg*var(--index))) translateY(-15px);
+}
+
+div:first-of-type div:first-child {
+    --index:0;
+}           
+
+div:first-of-type div:nth-child(2) {
+    --index:1;
+}
+
+div:first-of-type div:nth-child(3) {
+    --index:2;
+}
+
+div:first-of-type div:nth-child(4) {
+    --index:3;
+}
+
+div:first-of-type div:nth-child(5) {
+    --index:4;
+}
+
+div:first-of-type div:nth-child(6) {
+    --index:5;
+}
+
+div:first-of-type div:nth-child(7) {
+    --index:6;
+}
+
+div:first-of-type div:nth-child(8) {
+    --index:7;
+}
+
+div:first-of-type div:nth-child(9) {
+    --index:8;
+}
+
+div:first-of-type div:nth-child(10) {
+    --index:9;
+}
+
+div:first-of-type div:nth-child(11) {
+    --index:10;
+}
+
+div:first-of-type div:nth-child(12) {
+    --index:11;
+}
+
+
+div:first-of-type div::before {
+    content:'';
+    position: absolute;
+    left: 0;
+    right:0;
+    height:40px;
+    background-color:red;
+    animation: explosie1 2.5s ease-in-out infinite;
+}
+
+@keyframes explosie1 {
+    0% {
+        top: 100%;
+    }
+    33%, 100% {
+        top:-50%;
+    }
+}
+
+/* ------------------------------ explosie 2 --------------------------------------- */
+
+main > div:nth-of-type(2) {
+    position:absolute;
+    top:20em;
+    right:10em;
+}
+div:nth-of-type(2) div {
+    position:absolute;
+    left: -2px;
+    bottom: 0;
+    width: 4px;
+    height: 80px;
+    transform-origin: 50% 100%;
+    overflow: hidden;
+    transform: rotate(calc(30deg*var(--index))) translateY(-15px);
+
+}
+
+div:nth-of-type(2) div:first-child {
+    --index:0;
+}
+
+div:nth-of-type(2) div:nth-child(2) {
+    --index:1;
+}
+
+div:nth-of-type(2) div:nth-child(3) {
+    --index:2;
+}
+
+div:nth-of-type(2) div:nth-child(4) {
+    --index:3;
+}
+
+div:nth-of-type(2) div:nth-child(5) {
+    --index:4;
+}
+
+div:nth-of-type(2) div:nth-child(6) {
+    --index:5;
+}
+
+div:nth-of-type(2) div:nth-child(7) {
+    --index:6;
+}
+
+div:nth-of-type(2) div:nth-child(8) {
+    --index:7;
+}
+
+div:nth-of-type(2) div:nth-child(9) {
+    --index:8;
+}
+
+div:nth-of-type(2) div:nth-child(10) {
+    --index:9;
+}
+
+div:nth-of-type(2) div:nth-child(11) {
+    --index:10;
+}
+
+div:nth-of-type(2) div:nth-child(12) {
+    --index:11;
+}
+
+
+div:nth-of-type(2) div::before {
+    content:'';
+    position: absolute;
+    left: 0;
+    right:0;
+    height:40px;
+    background-color:rgb(30, 255, 0);
+    animation: explosie2 2.5s ease-in-out infinite;
+}
+
+@keyframes explosie2 {
+    0% {
+        top: 100%;
+    }
+    33%, 100% {
+        top:-50%;
+    }
+}
