@@ -1,3 +1,5 @@
+
+
 # WEEK 1
 ## recap
 De eerste week van de minor. Letsgo!. Omdat iedereen natuurlijk weer even moet wennen en moet inkomen begonnen we met een kennismakingsopdracht. Wij hadden met ons groepje de opdracht Lay-out. Ik heb me verdiept in text rondom shapes. Dit verliep erg soepel. We zouden de volgende dag het gaan presenteren, maar helaas was mijn coronatest woensdag avond positief. Dus alles omgegooid en het online gaan volgen. Dit was wel even wennen. Ik merkte ook aan de docenten dat ze het lastig vonden om ons niet te 'vergeten'. Ik had wel last van de corona dus ik heb op donderdag de uitleg online gevolgd van de eindopdracht en daarna mijn rust gepakt. Ik loop dus nog wel een beetje achter, maar dit ben ik van plan in het weekend en de voorjaarsvakantie in te halen. Ik heb wel al een plan bedacht voor de opdracht.
