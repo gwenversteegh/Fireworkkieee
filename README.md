@@ -15,7 +15,7 @@ Voor de eindopdracht heb ik het idee om verschillende potten op de grond te zett
 ## recap
 
 ### V1 vuurwerkshow:
-[vuurwerkshowv1]](https://github.com/gwenversteegh/css-to-the-rescue-2122/tree/main/vuurwerk)
+[vuurwerkshowv1](https://github.com/gwenversteegh/css-to-the-rescue-2122/tree/main/vuurwerk)
 # WEEK 3
 ## recap
 
