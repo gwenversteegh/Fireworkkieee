@@ -9,7 +9,7 @@ main {
     height:100vh;
     background-image: url("img/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
     background-size:cover;
-    position: relative;
+    position: relative; 
     
 }
 main > div {
@@ -28,7 +28,7 @@ ul {
 
 }
 
-/* ---------------------------------- explosie 1 rood --------------------------------- */
+/* ---------------------------------- vuurwerk 1 rood --------------------------------- */
 
 main > div:first-of-type {
     position:absolute;
@@ -115,7 +115,7 @@ main div:first-of-type div::before {
     }
 }
 
-/* ------------------------------ explosie 2 groen --------------------------------------- */
+/* ------------------------------ vuurwerk 2 groen --------------------------------------- */
 
 main > div:nth-of-type(2) {
     position:absolute;
@@ -202,7 +202,7 @@ main div:nth-of-type(2) div::before {
     }
 }
 
-/* ------------------ explosie 3 blauw -------------------- */
+/* ------------------ vuurwerk 3 blauw -------------------- */
 
 main > div:nth-of-type(3) {
     position:absolute;
