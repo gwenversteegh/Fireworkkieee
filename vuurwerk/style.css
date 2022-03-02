@@ -55,7 +55,7 @@ main section:first-of-type > div:first-of-type div {
 
  main section:first-of-type > div:first-of-type:hover div {
     animation-name: pijlblauw-animation;
-    animation-duration:2.5s;
+    animation-duration:.5s;
     animation-iteration-count: 1;
     animation-timing-function:ease-in;
     animation-fill-mode: forwards;
@@ -81,23 +81,23 @@ main section:first-of-type > div:first-of-type div {
 
  /* ------------------ vuurwerk 3 blauw -------------------- */
 
- 
-
-main section:first-of-type div:nth-of-type(2) {
+main section:first-of-type > div:nth-of-type(2) {
     position:absolute;
     top:30vh;
     left:7vw;
 }
-main section:first-of-type div:nth-of-type(2) div {
+main section:first-of-type > div:nth-of-type(2) div {
     position:absolute;
     left: -2px;
     bottom: 0;
+    
     width: 4px;
     height: 80px;
+
     transform-origin: 50% 100%;
     overflow: hidden;
-    transform: rotate(calc(30deg*var(--index))) translateY(-15px);
 
+    transform: rotate(calc(30deg*var(--index))) translateY(-15px);
 }
 
 main section:first-of-type div:nth-of-type(2) div:nth-child(2n) {
@@ -152,14 +152,19 @@ main section:first-of-type div:nth-of-type(2) div:nth-child(12) {
     --index:11;
 }
 
-main section:first-of-type div:nth-of-type(2) div {
+main section:first-of-type div:nth-of-type(2) div::before {
     content:'';
     position: absolute;
+    top:100%;
     left: 0;
     right:0;
     height:40px;
     background-color:rgb(17, 0, 255);
-    animation: explosie3 2.5s ease-in-out infinite;
+}
+
+main section:first-of-type > div:first-of-type:hover + div div::before {
+    animation: explosie3 2.5s ease-in-out;  
+    animation-delay: 0.5s;
 }
 
 
