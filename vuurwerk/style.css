@@ -74,6 +74,7 @@ main section:first-of-type > div:first-of-type div {
     100% { 
         transform: translate(0, -50vh); 
         clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+        background-color: transparent;
     }
   }
 
@@ -83,8 +84,8 @@ main section:first-of-type > div:first-of-type div {
 
 main section:first-of-type > div:nth-of-type(2) {
     position:absolute;
-    top:30vh;
-    left:7vw;
+    top:35vh;
+    left:10vw;
 }
 main section:first-of-type > div:nth-of-type(2) div {
     position:absolute;
