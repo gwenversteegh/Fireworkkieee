@@ -209,7 +209,7 @@ main section:nth-of-type(2) > div:first-of-type{
     width: 20vmin;
     position: absolute;
     bottom: 0; 
-    left: 25vw;
+    left: 20vw;
 }
 
 main section:nth-of-type(2) > div:first-of-type div {
@@ -257,7 +257,7 @@ main section:nth-of-type(2) > div:first-of-type div {
 main section:nth-of-type(2)> div:nth-of-type(2) {
     position:absolute;
     top:35vh;
-    left:35vw;
+    left:30vw;
 }
 main section:nth-of-type(2) > div:nth-of-type(2) div {
     position:absolute;
@@ -380,7 +380,7 @@ main section:nth-of-type(3) > div:first-of-type{
     width: 20vmin;
     position: absolute;
     bottom: 0; 
-    left: 50vw;
+    left: 40vw;
 }
 
 main section:nth-of-type(3) > div:first-of-type div {
@@ -426,7 +426,7 @@ main section:nth-of-type(3) > div:first-of-type div {
 main section:nth-of-type(3)> div:nth-of-type(2) {
     position:absolute;
     top:35vh;
-    left:60vw;
+    left:50vw;
 }
 main section:nth-of-type(3) > div:nth-of-type(2) div {
     position:absolute;
@@ -595,7 +595,7 @@ main section:nth-of-type(4) > div:first-of-type{
     width: 20vmin;
     position: absolute;
     bottom: 0; 
-    left: 75vw;
+    left: 60vw;
 }
 
 main section:nth-of-type(4) > div:first-of-type div {
@@ -641,7 +641,7 @@ main section:nth-of-type(4) > div:first-of-type div {
 main section:nth-of-type(4)> div:nth-of-type(2) {
     position:absolute;
     top:15vh;
-    left:85vw;
+    left:70vw;
 }
 main section:nth-of-type(4) > div:nth-of-type(2) div {
     position:absolute;
@@ -887,6 +887,324 @@ main section:nth-of-type(4) div:nth-of-type(2) div:nth-child(3n)::before{
 }
 
 @keyframes explosieroze {
+    0% {
+        top: 100%;
+    }
+    33%, 100% {
+        top:-100%;
+    }
+}
+
+
+ 
+/* --------------------------------------- vuurwerk groen ------------------------------------------------ */
+
+main section:nth-of-type(5) div:first-of-type p {
+    font-size: 3.5vw;
+   text-align: center;
+   padding-top: 2vmin;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: darkgreen;
+}
+
+
+main section:nth-of-type(5) > div:first-of-type{
+    height: 15vmin;
+    width: 20vmin;
+    position: absolute;
+    bottom: 0; 
+    left: 80vw;
+}
+
+main section:nth-of-type(5) > div:first-of-type div {
+    clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
+    height: 15vmin;
+    width: 20vmin;
+    background-color:darkseagreen;
+    position: absolute;
+    bottom: 0;
+    left: 0vw;
+
+ }
+
+ main section:nth-of-type(5) > div:first-of-type:hover div {
+    animation-name: pijlgroen-animation;
+    animation-duration:.5s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
+    animation-fill-mode: forwards;
+    background:darkgreen; 
+}
+
+ @keyframes pijlgroen-animation {
+    0% { 
+        transform: translate(0, 0); 
+        clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
+    }
+    1%{
+        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+    }
+
+    99% {
+        opacity:1;
+    }
+    
+    100% { 
+        transform: translate(0, -85vh); 
+        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+        opacity: 0;
+    }
+  }
+
+main section:nth-of-type(5)> div:nth-of-type(2) {
+    position:absolute;
+    top:15vh;
+    left:90vw;
+}
+main section:nth-of-type(5) > div:nth-of-type(2) div {
+    position:absolute;
+    left: -2px;
+    bottom: 0;
+    
+    width: 4px;
+    height: 80px;
+
+    transform-origin: 50% 100%;
+    overflow: hidden;
+
+    transform: rotate(calc(7.5deg*var(--index))) translateY(-15px);
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(2n) {
+    height:60px;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(3n) {
+    height:40px;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:first-child {
+    --index:0;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(2) {
+    --index:1;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(3) {
+    --index:2;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(4) {
+    --index:3;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(5) {
+    --index:4;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(6) {
+    --index:5;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(7) {
+    --index:6;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(8) {
+    --index:7;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(9) {
+    --index:8;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(10) {
+    --index:9;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(11) {
+    --index:10;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(12) {
+    --index:11;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(13) {
+    --index:12;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(14) {
+    --index:13;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(15) {
+    --index:14;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(16) {
+    --index:15;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(17) {
+    --index:16;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(18) {
+    --index:17;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(19) {
+    --index:18;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(20) {
+    --index:19;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(21) {
+    --index:20;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(22) {
+    --index:21;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(23) {
+    --index:22;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(24) {
+    --index:23;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(25) {
+    --index:24;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(26) {
+    --index:25;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(27) {
+    --index:26;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(28) {
+    --index:27;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(29) {
+    --index:28;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(30) {
+    --index:29;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(31) {
+    --index:30;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(32) {
+    --index:31;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(33) {
+    --index:32;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(34) {
+    --index:33;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(35) {
+    --index:34;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(36) {
+    --index:35;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(37) {
+    --index:36;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(38) {
+    --index:37;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(39) {
+    --index:38;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(40) {
+    --index:39;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(41) {
+    --index:40;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(42) {
+    --index:41;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(43) {
+    --index:42;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(44) {
+    --index:43;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(45) {
+    --index:44;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(46) {
+    --index:45;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(47) {
+    --index:46;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(48) {
+    --index:47;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div::before {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 0;
+    right:0;
+    height:80px;
+    background-color:darkgreen;
+}
+
+
+main section:nth-of-type(5) > div:first-of-type:hover + div div::before {
+    animation: explosiegroen 2.5s ease-in-out;  
+    animation-delay: 0.5s;
+    border-radius: 50%;
+ 
+}
+
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(2n)::before{
+    background-color: darkseagreen;
+    height:100%;
+}
+
+main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(3n)::before{
+    background-color: darkolivegreen;
+    height:100%;
+}
+
+@keyframes explosiegroen {
     0% {
         top: 100%;
     }
