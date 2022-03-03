@@ -23,7 +23,7 @@ main > div {
     position:relative;
 }
 
-/* ----------------------------------- vuurwerk potten --------------------------------------- */
+/* ----------------------------------- vuurwerk blauw --------------------------------------- */
 
 main section:first-of-type div:first-of-type p {
     font-size: 3.5vw;
@@ -71,16 +71,18 @@ main section:first-of-type > div:first-of-type div {
     1%{
         clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
     }
+
+    99% {
+        opacity:1;
+    }
+    
     100% { 
         transform: translate(0, -50vh); 
         clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
-        background-color: transparent;
+        opacity: 0;
     }
   }
 
-
-
- /* ------------------ vuurwerk 3 blauw -------------------- */
 
 main section:first-of-type > div:nth-of-type(2) {
     position:absolute;
@@ -176,6 +178,171 @@ main section:first-of-type div:nth-of-type(2) div:nth-child(2n)::before{
 
 
 @keyframes explosie3 {
+    0% {
+        top: 100%;
+    }
+    33%, 100% {
+        top:-100%;
+    }
+}
+
+
+/* ----------------------------------- vuurwerk rood --------------------------------------- */
+
+main section:nth-of-type(2) div:first-of-type p {
+    font-size: 3.5vw;
+   text-align: center;
+   padding-top: 2vmin;
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: darkred;
+
+}
+
+
+main section:nth-of-type(2) > div:first-of-type{
+    height: 15vmin;
+    width: 20vmin;
+    position: absolute;
+    bottom: 0; 
+    left: 25vw;
+}
+
+main section:nth-of-type(2) > div:first-of-type div {
+    clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
+    height: 15vmin;
+    width: 20vmin;
+    background-color:red;
+    position: absolute;
+    bottom: 0;
+    left: 0vw;
+
+ }
+
+ main section:nth-of-type(2) > div:first-of-type:hover div {
+    animation-name: pijlrood-animation;
+    animation-duration:.5s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
+    animation-fill-mode: forwards;
+    background:darkred; 
+}
+
+ /* pot blauw  animation */
+ @keyframes pijlrood-animation {
+    0% { 
+        transform: translate(0, 0); 
+        clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
+    }
+    1%{
+        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+    }
+
+    99% {
+        opacity:1;
+    }
+    
+    100% { 
+        transform: translate(0, -50vh); 
+        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+        opacity: 0;
+    }
+  }
+
+
+main section:nth-of-type(2)> div:nth-of-type(2) {
+    position:absolute;
+    top:35vh;
+    left:35vw;
+}
+main section:nth-of-type(2) > div:nth-of-type(2) div {
+    position:absolute;
+    left: -2px;
+    bottom: 0;
+    
+    width: 4px;
+    height: 80px;
+
+    transform-origin: 50% 100%;
+    overflow: hidden;
+
+    transform: rotate(calc(30deg*var(--index))) translateY(-15px);
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(2n) {
+    height:80px;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:first-child {
+    --index:0;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(2) {
+    --index:1;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(3) {
+    --index:2;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(4) {
+    --index:3;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(5) {
+    --index:4;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(6) {
+    --index:5;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(7) {
+    --index:6;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(8) {
+    --index:7;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(9) {
+    --index:8;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(10) {
+    --index:9;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(11) {
+    --index:10;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(12) {
+    --index:11;
+}
+
+main section:nth-of-type(2) div:nth-of-type(2) div::before {
+    content:'';
+    position: absolute;
+    top:100%;
+    left: 0;
+    right:0;
+    height:40px;
+    background-color:red;
+}
+
+main section:nth-of-type(2) > div:first-of-type:hover + div div::before {
+    animation: explosierood 2.5s ease-in-out;  
+    animation-delay: 0.5s;
+}
+
+
+main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(2n)::before{
+    background-color: red;
+    height:100%;
+}
+
+
+@keyframes explosierood {
     0% {
         top: 100%;
     }
