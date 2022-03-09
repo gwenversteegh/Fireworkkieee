@@ -84,17 +84,26 @@ main section:first-of-type > div:first-of-type div {
         left: 10vw;
     }
 
-    99% {
+    98% {
         opacity:1;
-    }
-    
-    100% { 
         transform: translate(0, -50vh); 
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
         height:12vh;
         left: 7.5vw;
+        background-color:darkblue; 
+    }
+    
+    99% { 
         opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0); 
+        clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
+        opacity:1;
+        background-color: aqua;
+
     }
   }
 
@@ -248,6 +257,7 @@ main section:nth-of-type(2) > div:first-of-type div {
     0% { 
         transform: translate(0, 0); 
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
+
     }
     1%{
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
@@ -255,17 +265,26 @@ main section:nth-of-type(2) > div:first-of-type div {
         height:12vh;
         left: 7.5vw;    }
 
-    99% {
+    98% {
+        background:darkred; 
         opacity:1;
-    }
-    
-    100% { 
         transform: translate(0, -50vh); 
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
         height:12vh;
         left: 7.5vw;
+    }
+    
+    99% { 
         opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0); 
+        clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
+        background-color:red;
+        opacity: 1;
+
     }
   }
 
@@ -427,19 +446,28 @@ main section:nth-of-type(3) > div:first-of-type div {
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
         height:12vh;
-        left: 7.5vw;    }
+        left: 7.5vw;   
+     }
 
-    99% {
+    98% {
         opacity:1;
-    }
-    
-    100% { 
         transform: translate(0, -50vh); 
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
         height:12vh;
-        left: 7.5vw;        
-        opacity: 0;
+        left: 7.5vw; 
+        background-color: orange;
+
+    }
+    
+    99% {      
+        opacity: 0;  
+    }
+
+    100% { 
+        transform: translate(0, 0); 
+        clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
+        background-color: yellow;
     }
   }
 
@@ -646,20 +674,27 @@ main section:nth-of-type(4) > div:first-of-type div {
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
         height:12vh;
-        left: 7.5vw;    
-    }
+        left: 7.5vw;   
+     }
 
-    99% {
+    98% {
         opacity:1;
-    }
-    
-    100% { 
-        transform: translate(0, -85vh); 
+        transform: translate(0, -50vh); 
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
         height:12vh;
-        left: 7.5vw;       
-        opacity: 0;
+        left: 7.5vw; 
+        background-color: purple;
+    }
+    
+    99% {      
+        opacity: 0;  
+    }
+
+    100% { 
+        transform: translate(0, 0); 
+        clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
+        background-color: pink;
     }
   }
 
@@ -969,19 +1004,27 @@ main section:nth-of-type(5) > div:first-of-type div {
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
         height:12vh;
-        left: 7.5vw;    }
+        left: 7.5vw;   
+     }
 
-    99% {
+    98% {
         opacity:1;
-    }
-    
-    100% { 
-        transform: translate(0, -85vh); 
+        transform: translate(0, -50vh); 
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
         height:12vh;
-        left: 7.5vw;        
-        opacity: 0;
+        left: 7.5vw; 
+        background-color: darkgreen;
+    }
+    
+    99% {      
+        opacity: 0;  
+    }
+
+    100% { 
+        transform: translate(0, 0); 
+        clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
+        background-color: darkseagreen;
     }
   }
 
