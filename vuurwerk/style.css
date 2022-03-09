@@ -1,4 +1,3 @@
-
 * {
     margin:0;
     padding:0;
@@ -15,17 +14,22 @@ main {
     background-image: linear-gradient(black, rgb(14, 14, 63));
     background-size:cover;
     position: relative; 
-    overflow: hidden;
-
-    
-}
-main > div {
-    position:relative;
+    overflow: hidden;   
 }
 
 
 
+
+
+/* ------------------------------------------------------------------------------------------ */
 /* ----------------------------------- vuurwerk blauw --------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+/* ---------- */
+/* pot blauw  */
+/* ---------- */
 
 main section:first-of-type div:first-of-type p {
     font-size: 2.5vw;
@@ -33,10 +37,7 @@ main section:first-of-type div:first-of-type p {
    padding-top: 2vmin;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    color: darkblue;  
-
 }
-
-/* pot blauw  */
 
 main section:first-of-type > div:first-of-type{
     height: 15vmin;
@@ -52,14 +53,13 @@ main section:first-of-type > div:first-of-type div {
     background-color:aqua;
     position: absolute;
     bottom: 0;
+}
 
+main > input[type="checkbox"] {
+    display:none;
+}
 
- }
- main > input[type="checkbox"] {
-     display:none;
- }
-
- main > input[type="checkbox"]:first-of-type:checked ~ section:first-of-type > div:first-of-type div {
+main > input[type="checkbox"]:first-of-type:checked ~ section:first-of-type > div:first-of-type div {
     animation-name: pijlblauw-animation;
     animation-duration:.5s;
     animation-iteration-count: 1;
@@ -68,14 +68,16 @@ main section:first-of-type > div:first-of-type div {
     background-color:darkblue; 
 }
 
+/* ----------------------------- */
+/* pot naar pijl blauw animation */
+/* ----------------------------- */
 
-
- /* pot blauw  animation */
- @keyframes pijlblauw-animation {
+@keyframes pijlblauw-animation {
     0% { 
         transform: translate(0, 0); 
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
     }
+
     1%{
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
@@ -88,6 +90,7 @@ main section:first-of-type > div:first-of-type div {
         opacity:1;
         transform: translate(0, -50vh); 
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
+
         width: 2vw;
         height:12vh;
         left: 7.5vw;
@@ -103,16 +106,19 @@ main section:first-of-type > div:first-of-type div {
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
         opacity:1;
         background-color: aqua;
-
     }
-  }
+}
 
+/* ----------------- */
+/* vuurwerkje blauw  */
+/* ----------------- */
 
 main section:first-of-type > div:nth-of-type(2) {
     position:absolute;
     top:35vh;
     left:10vw;
 }
+
 main section:first-of-type > div:nth-of-type(2) div {
     position:absolute;
     left: -2px;
@@ -190,40 +196,52 @@ main section:first-of-type div:nth-of-type(2) div::before {
     border-radius: 50%;
 
 }
+
+/* -------------------------- */
+/* animatie vuurwerkje blauw  */
+/* -------------------------- */
+
 main > input[type="checkbox"]:first-of-type:checked ~ section:first-of-type > div:first-of-type + div div::before {
     animation: explosie3 2.5s ease-in-out;  
     animation-delay: 0.5s;
 }
-
 
 main section:first-of-type div:nth-of-type(2) div:nth-child(2n)::before{
     background-color: aqua;
     height:100%;
 }
 
-
 @keyframes explosie3 {
     0% {
         top: 100%;
     }
+
     33%, 100% {
         top:-100%;
     }
 }
 
 
-/* ----------------------------------- vuurwerk rood --------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* ----------------------------------- vuurwerk rood ---------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+/* --------- */
+/* pot rood  */
+/* --------- */
 
 main section:nth-of-type(2) div:first-of-type p {
     font-size: 2.5vw;
-   text-align: center;
-   padding-top: 2vmin;
-   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   color: darkred;
-
-
+    text-align: center;
+    padding-top: 2vmin;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkred;
 }
-
 
 main section:nth-of-type(2) > div:first-of-type{
     height: 15vmin;
@@ -241,9 +259,9 @@ main section:nth-of-type(2) > div:first-of-type div {
     position: absolute;
     bottom: 0;
     left: 0vw;
+}
 
- }
- main > input[type="checkbox"]:nth-of-type(2):checked ~ section:nth-of-type(2) > div:first-of-type div {
+main > input[type="checkbox"]:nth-of-type(2):checked ~ section:nth-of-type(2) > div:first-of-type div {
     animation-name: pijlrood-animation;
     animation-duration:.5s;
     animation-iteration-count: 1;
@@ -252,18 +270,22 @@ main section:nth-of-type(2) > div:first-of-type div {
     background:darkred; 
 }
 
- /* pot blauw  animation */
- @keyframes pijlrood-animation {
+/* ---------------------------- */
+/* pot naar pijl rood animation */
+/* ---------------------------- */
+
+@keyframes pijlrood-animation {
     0% { 
         transform: translate(0, 0); 
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
-
     }
-    1%{
+
+    1% {
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
         height:12vh;
-        left: 7.5vw;    }
+        left: 7.5vw;    
+    }
 
     98% {
         background:darkred; 
@@ -284,16 +306,19 @@ main section:nth-of-type(2) > div:first-of-type div {
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
         background-color:red;
         opacity: 1;
-
     }
-  }
+}
 
+/* ---------------- */
+/* vuurwerkje rood  */
+/* ---------------- */
 
 main section:nth-of-type(2)> div:nth-of-type(2) {
     position:absolute;
     top:35vh;
     left:30vw;
 }
+
 main section:nth-of-type(2) > div:nth-of-type(2) div {
     position:absolute;
     left: -2px;
@@ -370,24 +395,26 @@ main section:nth-of-type(2) div:nth-of-type(2) div::before {
     background-color:darkred;
 }
 
+/* ------------------------- */
+/* animatie vuurwerkje rood  */
+/* ------------------------- */
+
 main > input[type="checkbox"]:nth-of-type(2):checked ~ section:nth-of-type(2) > div:first-of-type + div div::before {
     animation: explosierood 2.5s ease-in-out;  
     animation-delay: 0.5s;
     border-radius: 50%;
- 
 }
-
 
 main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(2n)::before{
     background-color: red;
     height:100%;
 }
 
-
 @keyframes explosierood {
     0% {
         top: 100%;
     }
+
     33%, 100% {
         top:-100%;
     }
@@ -397,7 +424,15 @@ main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(2n)::before{
 
 
 
-/* -------------------------------------- vuurwerk geel -------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+/* ----------------------------------vuurwerk geel ------------------------------------------ */
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+/* --------- */
+/* pot geel  */
+/* --------- */
 
 main section:nth-of-type(3) div:first-of-type p {
     font-size: 2.5vw;
@@ -405,10 +440,7 @@ main section:nth-of-type(3) div:first-of-type p {
    padding-top: 2vmin;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    color: orange;
-
-
 }
-
 
 main section:nth-of-type(3) > div:first-of-type{
     height: 15vmin;
@@ -426,9 +458,9 @@ main section:nth-of-type(3) > div:first-of-type div {
     position: absolute;
     bottom: 0;
     left: 0vw;
+}
 
- }
- main > input[type="checkbox"]:nth-of-type(3):checked ~ section:nth-of-type(3) > div:first-of-type div {
+main > input[type="checkbox"]:nth-of-type(3):checked ~ section:nth-of-type(3) > div:first-of-type div {
     animation-name: pijlgeel-animation;
     animation-duration:.5s;
     animation-iteration-count: 1;
@@ -437,17 +469,22 @@ main section:nth-of-type(3) > div:first-of-type div {
     background:orange; 
 }
 
- @keyframes pijlgeel-animation {
+/* --------------------------- */
+/* pot naar pijl geel animatie */
+/* --------------------------- */
+
+@keyframes pijlgeel-animation {
     0% { 
         transform: translate(0, 0); 
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
     }
+
     1%{
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
         height:12vh;
         left: 7.5vw;   
-     }
+    }
 
     98% {
         opacity:1;
@@ -457,7 +494,6 @@ main section:nth-of-type(3) > div:first-of-type div {
         height:12vh;
         left: 7.5vw; 
         background-color: orange;
-
     }
     
     99% {      
@@ -469,7 +505,11 @@ main section:nth-of-type(3) > div:first-of-type div {
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
         background-color: yellow;
     }
-  }
+}
+
+/* ---------------- */
+/* vuurwerkje geel  */
+/* ---------------- */
 
 main section:nth-of-type(3)> div:nth-of-type(2) {
     position:absolute;
@@ -600,32 +640,44 @@ main section:nth-of-type(3) div:nth-of-type(2) div::before {
     background-color:orange;
 }
 
+/* ------------------------- */
+/* vuurwerkje geel animatie  */
+/* ------------------------- */
+
 main > input[type="checkbox"]:nth-of-type(3):checked ~ section:nth-of-type(3) > div:first-of-type + div div::before {
     animation: explosiegeel 2.5s ease-in-out;  
     animation-delay: 0.5s;
     border-radius: 50%;
- 
 }
-
 
 main section:nth-of-type(3) div:nth-of-type(2) div:nth-child(2n)::before{
     background-color: yellow;
     height:100%;
 }
 
-
 @keyframes explosiegeel {
     0% {
         top: 100%;
     }
+
     33%, 100% {
         top:-100%;
     }
 }
 
 
- 
-/* --------------------------------------- vuurwerk roze ------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------- vuurwerk roze -------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+/* --------- */
+/* pot roze  */
+/* --------- */
 
 main section:nth-of-type(4) div:first-of-type p {
     font-size: 2.5vw;
@@ -633,8 +685,6 @@ main section:nth-of-type(4) div:first-of-type p {
    padding-top: 2vmin;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    color: purple;
-
-
 }
 
 
@@ -654,8 +704,12 @@ main section:nth-of-type(4) > div:first-of-type div {
     position: absolute;
     bottom: 0;
     left: 0vw;
+}
 
- }
+/* ---------------------------- */
+/* pot naar pijl roze animatie  */
+/* ---------------------------- */
+
  main > input[type="checkbox"]:nth-of-type(4):checked ~ section:nth-of-type(4) > div:first-of-type div {
     animation-name: pijlroze-animation;
     animation-duration:.5s;
@@ -665,11 +719,12 @@ main section:nth-of-type(4) > div:first-of-type div {
     background:purple; 
 }
 
- @keyframes pijlroze-animation {
+@keyframes pijlroze-animation {
     0% { 
         transform: translate(0, 0); 
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
     }
+
     1%{
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
@@ -696,13 +751,18 @@ main section:nth-of-type(4) > div:first-of-type div {
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
         background-color: pink;
     }
-  }
+}
+
+/* ---------------- */
+/* vuurwerkje roze  */
+/* ---------------- */
 
 main section:nth-of-type(4)> div:nth-of-type(2) {
     position:absolute;
     top:15vh;
     left:70vw;
 }
+
 main section:nth-of-type(4) > div:nth-of-type(2) div {
     position:absolute;
     left: -2px;
@@ -927,14 +987,15 @@ main section:nth-of-type(4) div:nth-of-type(2) div::before {
     background-color:purple;
 }
 
+/* ------------------------- */
+/* vuurwerkje roze animatie  */
+/* ------------------------- */
 
 main > input[type="checkbox"]:nth-of-type(4):checked ~ section:nth-of-type(4) > div:first-of-type + div div::before {
     animation: explosieroze 2.5s ease-in-out;  
     animation-delay: 0.5s;
     border-radius: 50%;
- 
 }
-
 
 main section:nth-of-type(4) div:nth-of-type(2) div:nth-child(2n)::before{
     background-color: pink;
@@ -950,14 +1011,25 @@ main section:nth-of-type(4) div:nth-of-type(2) div:nth-child(3n)::before{
     0% {
         top: 100%;
     }
+
     33%, 100% {
         top:-100%;
     }
 }
 
 
- 
-/* --------------------------------------- vuurwerk groen ------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* ---------------------------------- vuurwerk groen ---------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+/* ---------- */
+/* pot groen  */
+/* ---------- */
 
 main section:nth-of-type(5) div:first-of-type p {
     font-size: 2.5vw;
@@ -966,7 +1038,6 @@ main section:nth-of-type(5) div:first-of-type p {
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    color: darkgreen;
 }
-
 
 main section:nth-of-type(5) > div:first-of-type{
     height: 15vmin;
@@ -984,9 +1055,13 @@ main section:nth-of-type(5) > div:first-of-type div {
     position: absolute;
     bottom: 0;
     left: 0vw;
+}
 
- }
- main > input[type="checkbox"]:nth-of-type(5):checked ~ section:nth-of-type(5) > div:first-of-type div {
+/* ----------------------------- */
+/* pot naar pijl groen animatie  */
+/* ----------------------------- */
+
+main > input[type="checkbox"]:nth-of-type(5):checked ~ section:nth-of-type(5) > div:first-of-type div {
     animation-name: pijlgroen-animation;
     animation-duration:.5s;
     animation-iteration-count: 1;
@@ -995,11 +1070,12 @@ main section:nth-of-type(5) > div:first-of-type div {
     background:darkgreen; 
 }
 
- @keyframes pijlgroen-animation {
+@keyframes pijlgroen-animation {
     0% { 
         transform: translate(0, 0); 
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
     }
+
     1%{
         clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
         width: 2vw;
@@ -1026,13 +1102,18 @@ main section:nth-of-type(5) > div:first-of-type div {
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
         background-color: darkseagreen;
     }
-  }
+}
+
+/* ----------------- */
+/* vuurwerkje groen  */
+/* ----------------- */
 
 main section:nth-of-type(5)> div:nth-of-type(2) {
     position:absolute;
     top:15vh;
     left:90vw;
 }
+
 main section:nth-of-type(5) > div:nth-of-type(2) div {
     position:absolute;
     left: -2px;
@@ -1257,14 +1338,15 @@ main section:nth-of-type(5) div:nth-of-type(2) div::before {
     background-color:darkgreen;
 }
 
+/* -------------------------- */
+/* vuurwerkje groen animatie  */
+/* -------------------------- */
 
 main > input[type="checkbox"]:nth-of-type(5):checked ~ section:nth-of-type(5) > div:first-of-type + div div::before {
     animation: explosiegroen 2.5s ease-in-out;  
     animation-delay: 0.5s;
     border-radius: 50%;
- 
 }
-
 
 main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(2n)::before{
     background-color: darkseagreen;
@@ -1280,21 +1362,34 @@ main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(3n)::before{
     0% {
         top: 100%;
     }
+
     33%, 100% {
         top:-100%;
     }
 }
 
-/* -------------------------------------------- maan ----------------------------------------------------- */
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------------ maan ------------------------------------------ */
+/* ------------------------------------------------------------------------------------------ */
+
+
+
 main > div:first-of-type {
 border-radius: 50%;
   background:white;
   box-shadow: 0 0 20px 10px white;
+
   width: 15vw;
   height: 15vw;
+
   position: absolute;
   top: 10vh;
   left: 5vw;
+  
   animation: night 1000s ease-in-out infinite;
 }
 
@@ -1310,28 +1405,34 @@ border-radius: 50%;
   }
 }
 
-/* -------------------------------------------- sterrenhemel 1 ---------------------------------------------------------- */
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* ----------------------------------- sterrenhemel 1 --------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+
 
 
 main > div:nth-of-type(2) div {
     border-radius: 50%;
-  background:white;
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  animation: glow1 1s ease-in-out infinite alternate; 
+    background:white;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    animation: glow1 1s ease-in-out infinite alternate; 
 }
-
 
 @keyframes glow1 {
     from {
       box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bfbef0, 0 0 40px #bfbef0, 0 0 50px #bfbef0, 0 0 60px #bfbef0, 0 0 70px #bfbef0;
     }
+
     to {
       box-shadow: 0 0 20px #fff, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0  70px 1px white, 0 0 80px 5px white, 0 0 90px 10px white;
     }
-  } 
-
+} 
 
 main > div:nth-of-type(2) div:first-of-type {
   top: 15vh;
@@ -1341,7 +1442,7 @@ main > div:nth-of-type(2) div:first-of-type {
 main > div:nth-of-type(2) div:nth-of-type(2) {
     top: 20vh;
     left: 25vw;
-  }
+}
 
 main > div:nth-of-type(2) div:nth-of-type(3) {
   top: 35vh;
@@ -1351,38 +1452,42 @@ main > div:nth-of-type(2) div:nth-of-type(3) {
 main > div:nth-of-type(2) div:nth-of-type(4) {
     top: 40vh;
     left: 45vw;
-  }
+}
 
 main > div:nth-of-type(2) div:nth-of-type(5) {
     top: 55vh;
     left: 50vw;
-  }
+}
 
 main > div:nth-of-type(2) div:nth-of-type(6) {
     top: 60vh;
     left: 65vw;
-  }
+}
+
 main > div:nth-of-type(2) div:nth-of-type(7) {
     top: 75vh;
     left: 70vw;
-  }
+}
+
 main > div:nth-of-type(2) div:nth-of-type(8) {
     top: 80vh;
     left: 85vw;
-  }
+}
+
 main > div:nth-of-type(2) div:nth-of-type(9) {
     top: 95vh;
     left: 90vw;
-  }
+}
 
 main > div:nth-of-type(2) div:nth-of-type(10) {
     top: 30vh;
     left: 15vw;
-  }
+}
+
 main > div:nth-of-type(2) div:nth-of-type(11) {
     top: 65vh;
     left: 40vw;
-  }
+}
 
 main > div:nth-of-type(2) div:nth-of-type(12) {
   top: 20vh;
@@ -1392,42 +1497,51 @@ main > div:nth-of-type(2) div:nth-of-type(12) {
 main > div:nth-of-type(2) div:nth-of-type(13) {
     top: 80vh;
     left: 20vw;
-  }
+}
 
 main > div:nth-of-type(2) div:nth-of-type(14) {
     top: 35vh;
     left: 5vw;
-  }
+}
 
 main > div:nth-of-type(2) div:nth-of-type(15) {
     top: 40vh;
     left: 60vw;
-  }
+}
+
 main > div:nth-of-type(2) div:nth-of-type(16) {
     top: 40vh;
     left: 80vw;
-  }
+}
+
 main > div:nth-of-type(2) div:nth-of-type(17) {
     top: 10vh;
     left: 30vw;
-  }
+}
+
 main > div:nth-of-type(2) div:nth-of-type(18) {
     top: 20vh;
     left: 55vw;
-  }
+}
 
 main > div:nth-of-type(2) div:nth-of-type(19) {
     top: 10vh;
     left: 90vw;
-  }
+}
 
-  main > div:nth-of-type(2) div:nth-of-type(20) {
+main > div:nth-of-type(2) div:nth-of-type(20) {
     top: 5vh;
     left: 60vw;
-  }
+}
 
 
-  /* -------------------------------------------- sterrenhemel 2 ---------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* --------------------------------- sterrenhemel 2 ----------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+
 
 
   main > div:nth-of-type(3) div {
@@ -1440,16 +1554,15 @@ main > div:nth-of-type(2) div:nth-of-type(19) {
   animation-delay: 1s; */
 }
 
-
 /* @keyframes glow2 {
     from {
       box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bfbef0, 0 0 40px #bfbef0, 0 0 50px #bfbef0, 0 0 60px #bfbef0, 0 0 70px #bfbef0;
     }
+
     to {
       box-shadow: 0 0 20px 3px #fff, 0 0 40px 4px white, 0 0 50px 5px white, 0 0 60px white, 0 0  70px  white, 0 0 80px  white, 0 0 90px white;
     }
-  }  */
-
+}  */
 
 main > div:nth-of-type(3) div:first-of-type {
   top: 50vh;
@@ -1459,7 +1572,7 @@ main > div:nth-of-type(3) div:first-of-type {
 main > div:nth-of-type(3) div:nth-of-type(2) {
     top: 50vh;
     left: 95vw;
-  }
+}
 
 main > div:nth-of-type(3) div:nth-of-type(3) {
   top: 30vh;
@@ -1469,38 +1582,42 @@ main > div:nth-of-type(3) div:nth-of-type(3) {
 main > div:nth-of-type(3) div:nth-of-type(4) {
     top: 60vh;
     left: 20vw;
-  }
+}
 
 main > div:nth-of-type(3) div:nth-of-type(5) {
     top: 70vh;
     left: 80vw;
-  }
+}
 
 main > div:nth-of-type(3) div:nth-of-type(6) {
     top: 7.5vh;
     left: 80vw;
-  }
+}
+
 main > div:nth-of-type(3) div:nth-of-type(7) {
     top: 15vh;
     left: 20vw;
-  }
+}
+
 main > div:nth-of-type(3) div:nth-of-type(8) {
     top: 17.5vh;
     left: 85vw;
-  }
+}
+
 main > div:nth-of-type(3) div:nth-of-type(9) {
     top: 70vh;
     left: 7.5vw;
-  }
+}
 
 main > div:nth-of-type(3) div:nth-of-type(10) {
     top: 5vh;
     left: 15vw;
-  }
+}
+
 main > div:nth-of-type(3) div:nth-of-type(11) {
     top: 10vh;
     left: 85vw;
-  }
+}
 
 main > div:nth-of-type(3) div:nth-of-type(12) {
   top: 45vh;
@@ -1510,36 +1627,64 @@ main > div:nth-of-type(3) div:nth-of-type(12) {
 main > div:nth-of-type(3) div:nth-of-type(13) {
     top: 65vh;
     left: 85vw;
-  }
+}
 
 main > div:nth-of-type(3) div:nth-of-type(14) {
     top: 10vh;
     left: 65vw;
-  }
+}
 
 main > div:nth-of-type(3) div:nth-of-type(15) {
     top: 30vh;
     left: 63vw;
-  }
+}
+
 main > div:nth-of-type(3) div:nth-of-type(16) {
     top:2.5vh;
     left: 80vw;
-  }
+}
+
 main > div:nth-of-type(3) div:nth-of-type(17) {
     top: 2.5vh;
     left: 10vw;
-  }
+}
+
 main > div:nth-of-type(3) div:nth-of-type(18) {
     top: 50vh;
     left: 45vw;
-  }
+}
 
 main > div:nth-of-type(3) div:nth-of-type(19) {
     top: 20vh;
     left: 20vw;
-  }
+}
 
   main > div:nth-of-type(3) div:nth-of-type(20) {
     top: 75vh;
     left: 60vw;
-  }
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* ---------------------------------- Bronnnen ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+ /* vuurwerk tutorial : */
+/* https://www.youtube.com/watch?v=K4K7HNavK4U&t=278s */
+
+/* algemene informatie: */
+/* https://www.w3schools.com */
+
+/* glowing stars */
+/* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+
+/* clippath maker */
+/* https://bennettfeely.com/clippy/ */
+
+/* clippath vuurpijl gemaakt door sophie :) */
