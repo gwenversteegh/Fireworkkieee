@@ -25,8 +25,8 @@ Ik ben begonnen met het maken van vuurwerkpotten in illustrator om een idee te k
 ### week 3
 In het laatste feedback gesprek werd er gezegd dat ik nog puntjes op de i moest zetten en details toe moest voegen. Mijn achtergrond was nog een plaatje dus deze heb ik vervangen voor een zelfgemaakte sterrenhemel, met een maan die langzaam beweegt. Daarbij was voor mezelf nog een doel om met checkbox te werken inplaats van met hover. Ook dit is gelukt en nu kun je het vuurwerk gewoon aanklikken. Ook heb ik in deze week mijn code netjes gemaakt.
 
-<img width="400" alt="Screenshot 2022-03-09 at 14 12 55" src="https://user-images.githubusercontent.com/70900763/157448526-e9c3ab24-5443-4c7a-b3dc-40a8b1e634bd.png">
-<img width="400" alt="Screenshot 2022-03-09 at 14 13 20" src="https://user-images.githubusercontent.com/70900763/157448588-3b9c1d2a-b8c7-460e-b6c0-a79ca704f8c2.png">
+<img width="300" alt="Screenshot 2022-03-09 at 14 12 55" src="https://user-images.githubusercontent.com/70900763/157448526-e9c3ab24-5443-4c7a-b3dc-40a8b1e634bd.png"> <img width="300" alt="Screenshot 2022-03-09 at 14 53 17" src="https://user-images.githubusercontent.com/70900763/157455266-3ead3a18-e7be-4a0b-b011-6f5fbbc62094.png"> <img width="300" alt="Screenshot 2022-03-09 at 14 13 20" src="https://user-images.githubusercontent.com/70900763/157448588-3b9c1d2a-b8c7-460e-b6c0-a79ca704f8c2.png">
+
 
 ## Wat heb ik geleerd?
 - [ ] Het gebruik van checkboxes
@@ -53,8 +53,8 @@ Ik ben het meest trots op het gebruik van checkbox en de animatie van pot naar p
 algemene informatie: 
 https://www.w3schools.com 
 
-/* glowing stars */
-/* https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+glowing stars 
+https://www.w3schools.com/howto/howto_css_glowing_text.asp 
 
-/* clippath maker */
-/* https://bennettfeely.com/clippy/ */
+clippath maker
+https://bennettfeely.com/clippy/
