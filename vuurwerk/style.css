@@ -12,7 +12,7 @@ body {
 main {
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-image: linear-gradient(black, rgb(14, 14, 63));
     background-size:cover;
     position: relative; 
     overflow: hidden;
@@ -28,7 +28,7 @@ main > div {
 /* ----------------------------------- vuurwerk blauw --------------------------------------- */
 
 main section:first-of-type div:first-of-type p {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
    text-align: center;
    padding-top: 2vmin;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -55,16 +55,20 @@ main section:first-of-type > div:first-of-type div {
 
 
  }
+ main > input[type="checkbox"] {
+     display:none;
+ }
 
- main section:first-of-type > div:first-of-type:hover div {
+ main > input[type="checkbox"]:first-of-type:checked ~ section:first-of-type > div:first-of-type div {
     animation-name: pijlblauw-animation;
     animation-duration:.5s;
     animation-iteration-count: 1;
     animation-timing-function:ease-in;
     animation-fill-mode: forwards;
-    background:darkblue; 
-
+    background-color:darkblue; 
 }
+
+
 
  /* pot blauw  animation */
  @keyframes pijlblauw-animation {
@@ -74,6 +78,7 @@ main section:first-of-type > div:first-of-type div {
     }
     1%{
         clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+
     }
 
     99% {
@@ -170,8 +175,7 @@ main section:first-of-type div:nth-of-type(2) div::before {
     border-radius: 50%;
 
 }
-
-main section:first-of-type > div:first-of-type:hover + div div::before {
+main > input[type="checkbox"]:first-of-type:checked ~ section:first-of-type > div:first-of-type + div div::before {
     animation: explosie3 2.5s ease-in-out;  
     animation-delay: 0.5s;
 }
@@ -196,7 +200,7 @@ main section:first-of-type div:nth-of-type(2) div:nth-child(2n)::before{
 /* ----------------------------------- vuurwerk rood --------------------------------------- */
 
 main section:nth-of-type(2) div:first-of-type p {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
    text-align: center;
    padding-top: 2vmin;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -224,8 +228,7 @@ main section:nth-of-type(2) > div:first-of-type div {
     left: 0vw;
 
  }
-
- main section:nth-of-type(2) > div:first-of-type:hover div {
+ main > input[type="checkbox"]:nth-of-type(2):checked ~ section:nth-of-type(2) > div:first-of-type div {
     animation-name: pijlrood-animation;
     animation-duration:.5s;
     animation-iteration-count: 1;
@@ -337,7 +340,7 @@ main section:nth-of-type(2) div:nth-of-type(2) div::before {
     background-color:darkred;
 }
 
-main section:nth-of-type(2) > div:first-of-type:hover + div div::before {
+main > input[type="checkbox"]:nth-of-type(2):checked ~ section:nth-of-type(2) > div:first-of-type + div div::before {
     animation: explosierood 2.5s ease-in-out;  
     animation-delay: 0.5s;
     border-radius: 50%;
@@ -367,7 +370,7 @@ main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(2n)::before{
 /* -------------------------------------- vuurwerk geel -------------------------------------------------------- */
 
 main section:nth-of-type(3) div:first-of-type p {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
    text-align: center;
    padding-top: 2vmin;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -395,8 +398,7 @@ main section:nth-of-type(3) > div:first-of-type div {
     left: 0vw;
 
  }
-
- main section:nth-of-type(3) > div:first-of-type:hover div {
+ main > input[type="checkbox"]:nth-of-type(3):checked ~ section:nth-of-type(3) > div:first-of-type div {
     animation-name: pijlgeel-animation;
     animation-duration:.5s;
     animation-iteration-count: 1;
@@ -554,7 +556,7 @@ main section:nth-of-type(3) div:nth-of-type(2) div::before {
     background-color:orange;
 }
 
-main section:nth-of-type(3) > div:first-of-type:hover + div div::before {
+main > input[type="checkbox"]:nth-of-type(3):checked ~ section:nth-of-type(3) > div:first-of-type + div div::before {
     animation: explosiegeel 2.5s ease-in-out;  
     animation-delay: 0.5s;
     border-radius: 50%;
@@ -582,7 +584,7 @@ main section:nth-of-type(3) div:nth-of-type(2) div:nth-child(2n)::before{
 /* --------------------------------------- vuurwerk roze ------------------------------------------------ */
 
 main section:nth-of-type(4) div:first-of-type p {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
    text-align: center;
    padding-top: 2vmin;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -610,8 +612,7 @@ main section:nth-of-type(4) > div:first-of-type div {
     left: 0vw;
 
  }
-
- main section:nth-of-type(4) > div:first-of-type:hover div {
+ main > input[type="checkbox"]:nth-of-type(4):checked ~ section:nth-of-type(4) > div:first-of-type div {
     animation-name: pijlroze-animation;
     animation-duration:.5s;
     animation-iteration-count: 1;
@@ -627,6 +628,7 @@ main section:nth-of-type(4) > div:first-of-type div {
     }
     1%{
         clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+    
     }
 
     99% {
@@ -870,7 +872,7 @@ main section:nth-of-type(4) div:nth-of-type(2) div::before {
 }
 
 
-main section:nth-of-type(4) > div:first-of-type:hover + div div::before {
+main > input[type="checkbox"]:nth-of-type(4):checked ~ section:nth-of-type(4) > div:first-of-type + div div::before {
     animation: explosieroze 2.5s ease-in-out;  
     animation-delay: 0.5s;
     border-radius: 50%;
@@ -902,7 +904,7 @@ main section:nth-of-type(4) div:nth-of-type(2) div:nth-child(3n)::before{
 /* --------------------------------------- vuurwerk groen ------------------------------------------------ */
 
 main section:nth-of-type(5) div:first-of-type p {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
    text-align: center;
    padding-top: 2vmin;
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -928,8 +930,7 @@ main section:nth-of-type(5) > div:first-of-type div {
     left: 0vw;
 
  }
-
- main section:nth-of-type(5) > div:first-of-type:hover div {
+ main > input[type="checkbox"]:nth-of-type(5):checked ~ section:nth-of-type(5) > div:first-of-type div {
     animation-name: pijlgroen-animation;
     animation-duration:.5s;
     animation-iteration-count: 1;
@@ -1188,7 +1189,7 @@ main section:nth-of-type(5) div:nth-of-type(2) div::before {
 }
 
 
-main section:nth-of-type(5) > div:first-of-type:hover + div div::before {
+main > input[type="checkbox"]:nth-of-type(5):checked ~ section:nth-of-type(5) > div:first-of-type + div div::before {
     animation: explosiegroen 2.5s ease-in-out;  
     animation-delay: 0.5s;
     border-radius: 50%;
@@ -1225,7 +1226,7 @@ border-radius: 50%;
   position: absolute;
   top: 10vh;
   left: 5vw;
-  animation: night 240s ease-in-out infinite;
+  animation: night 1000s ease-in-out infinite;
 }
 
 @keyframes night {
@@ -1356,7 +1357,7 @@ main > div:nth-of-type(2) div:nth-of-type(19) {
   }
 
 
-  /* -------------------------------------------- sterrenhemel 1 ---------------------------------------------------------- */
+  /* -------------------------------------------- sterrenhemel 2 ---------------------------------------------------------- */
 
 
   main > div:nth-of-type(3) div {
