@@ -29,11 +29,11 @@ In het laatste feedback gesprek werd er gezegd dat ik nog puntjes op de i moest 
 <img width="400" alt="Screenshot 2022-03-09 at 14 13 20" src="https://user-images.githubusercontent.com/70900763/157448588-3b9c1d2a-b8c7-460e-b6c0-a79ca704f8c2.png">
 
 ## Wat heb ik geleerd?
-[ ] Het gebruik van checkboxes
-[ ] Meerdere animaties op 1 checkbox
-[ ] Gebruik maken van clippath
-[ ] Verschillende soorten animaties
-[ ] moeilijkere animaties
+- [ ] Het gebruik van checkboxes
+- [ ] Meerdere animaties op 1 checkbox
+- [ ] Gebruik maken van clippath
+- [ ] Verschillende soorten animaties
+- [ ] moeilijkere animaties
 
 ## wat ging goed en wat minder?
 Zoals ik al eerder zei was het voor mij best een uitdaging. Ik heb niet heel veel ervaring met css buiten de standaard vakken die je krijgt in het 1e en 2e jaar bij CMD. Het was in het begin dus ook echt wel even wennen. De eerste week ging het minst goed. Ik zat thuis met corona en daardoor kon ik minder dingen vragen en heb ik een kleine achterstand opgelopen. Dit heb ik wel weer ingehaald in de rest van de weken gelukkig die beter gingen. Bij de sterrenhemel had ik nog meer sterren met animatie, maar het vuurwerk werd hierdoor heel sloom helaas.
@@ -43,8 +43,8 @@ De uitdaging aangaan ging zeker goed. Ik ben elke keer met een stapje vooruit ge
 Ik ben het meest trots op het gebruik van checkbox en de animatie van pot naar pijl naar explosie. Ook is het me gelukt om het goed responsive te maken waar ik voorheen niet veel aandacht aan besteedde. 
 
 ## future plans
-[ ] Grote eindknal
-[ ] meer vuurwerk per pot
+- [ ] Grote eindknal
+- [ ] meer vuurwerk per pot
 
 ## bronnen
  vuurwerk tutorial : 
