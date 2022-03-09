@@ -77,8 +77,11 @@ main section:first-of-type > div:first-of-type div {
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
     }
     1%{
-        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
-
+        clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
+        width: 2vw;
+        height:12vh;
+        left: 7.5vw;
+        left: 10vw;
     }
 
     99% {
@@ -87,7 +90,10 @@ main section:first-of-type > div:first-of-type div {
     
     100% { 
         transform: translate(0, -50vh); 
-        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+        clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
+        width: 2vw;
+        height:12vh;
+        left: 7.5vw;
         opacity: 0;
     }
   }
@@ -244,8 +250,10 @@ main section:nth-of-type(2) > div:first-of-type div {
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
     }
     1%{
-        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
-    }
+        clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
+        width: 2vw;
+        height:12vh;
+        left: 7.5vw;    }
 
     99% {
         opacity:1;
@@ -253,7 +261,10 @@ main section:nth-of-type(2) > div:first-of-type div {
     
     100% { 
         transform: translate(0, -50vh); 
-        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+        clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
+        width: 2vw;
+        height:12vh;
+        left: 7.5vw;
         opacity: 0;
     }
   }
@@ -413,8 +424,10 @@ main section:nth-of-type(3) > div:first-of-type div {
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
     }
     1%{
-        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
-    }
+        clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
+        width: 2vw;
+        height:12vh;
+        left: 7.5vw;    }
 
     99% {
         opacity:1;
@@ -422,7 +435,10 @@ main section:nth-of-type(3) > div:first-of-type div {
     
     100% { 
         transform: translate(0, -50vh); 
-        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+        clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
+        width: 2vw;
+        height:12vh;
+        left: 7.5vw;        
         opacity: 0;
     }
   }
@@ -627,8 +643,10 @@ main section:nth-of-type(4) > div:first-of-type div {
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
     }
     1%{
-        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
-    
+        clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
+        width: 2vw;
+        height:12vh;
+        left: 7.5vw;    
     }
 
     99% {
@@ -637,7 +655,10 @@ main section:nth-of-type(4) > div:first-of-type div {
     
     100% { 
         transform: translate(0, -85vh); 
-        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+        clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
+        width: 2vw;
+        height:12vh;
+        left: 7.5vw;       
         opacity: 0;
     }
   }
@@ -945,8 +966,10 @@ main section:nth-of-type(5) > div:first-of-type div {
         clip-path: polygon(0 0, 100% 0, 85% 60%, 15% 61%);
     }
     1%{
-        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
-    }
+        clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
+        width: 2vw;
+        height:12vh;
+        left: 7.5vw;    }
 
     99% {
         opacity:1;
@@ -954,7 +977,10 @@ main section:nth-of-type(5) > div:first-of-type div {
     
     100% { 
         transform: translate(0, -85vh); 
-        clip-path: polygon(44% 100%, 45% 40%, 39% 40%, 50% 16%, 61% 40%, 54% 40%, 53% 100%);
+        clip-path: polygon(50% 0, 0 14%, 20% 14%, 20% 70%, 35% 70%, 35% 100%, 45% 100%, 45% 70%, 80% 70%, 80% 14%, 100% 14%);
+        width: 2vw;
+        height:12vh;
+        left: 7.5vw;        
         opacity: 0;
     }
   }
@@ -1243,6 +1269,7 @@ border-radius: 50%;
 
 /* -------------------------------------------- sterrenhemel 1 ---------------------------------------------------------- */
 
+
 main > div:nth-of-type(2) div {
     border-radius: 50%;
   background:white;
@@ -1258,7 +1285,7 @@ main > div:nth-of-type(2) div {
       box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bfbef0, 0 0 40px #bfbef0, 0 0 50px #bfbef0, 0 0 60px #bfbef0, 0 0 70px #bfbef0;
     }
     to {
-      box-shadow: 0 0 20px #fff, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0  70px 1px white, 0 0 80px 10px white, 0 0 90px 10px white;
+      box-shadow: 0 0 20px #fff, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0  70px 1px white, 0 0 80px 5px white, 0 0 90px 10px white;
     }
   } 
 
@@ -1366,19 +1393,19 @@ main > div:nth-of-type(2) div:nth-of-type(19) {
   width: 2.5px;
   height: 2.5px;
   position: absolute;
-  animation: glow2 1s ease-in-out infinite alternate; 
-  animation-delay: 1s;
+  /* animation: glow2 1s ease-in-out infinite alternate; 
+  animation-delay: 1s; */
 }
 
 
-@keyframes glow2 {
+/* @keyframes glow2 {
     from {
       box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bfbef0, 0 0 40px #bfbef0, 0 0 50px #bfbef0, 0 0 60px #bfbef0, 0 0 70px #bfbef0;
     }
     to {
       box-shadow: 0 0 20px 3px #fff, 0 0 40px 4px white, 0 0 50px 5px white, 0 0 60px white, 0 0  70px  white, 0 0 80px  white, 0 0 90px white;
     }
-  } 
+  }  */
 
 
 main > div:nth-of-type(3) div:first-of-type {
