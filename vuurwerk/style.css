@@ -12,7 +12,7 @@ body {
 main {
     height: 100vh;
     width: 100vw;
-    background-image: url("img/kai-pilger-Ef6iL87-vOA-unsplash.jpg");
+    background-color: black;
     background-size:cover;
     position: relative; 
     overflow: hidden;
@@ -22,6 +22,8 @@ main {
 main > div {
     position:relative;
 }
+
+
 
 /* ----------------------------------- vuurwerk blauw --------------------------------------- */
 
@@ -1212,3 +1214,261 @@ main section:nth-of-type(5) div:nth-of-type(2) div:nth-child(3n)::before{
         top:-100%;
     }
 }
+
+/* -------------------------------------------- maan ----------------------------------------------------- */
+main > div:first-of-type {
+border-radius: 50%;
+  background:white;
+  box-shadow: 0 0 20px 10px white;
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  top: 10vh;
+  left: 5vw;
+  animation: night 240s ease-in-out infinite;
+}
+
+@keyframes night {
+  0% {
+      left:5vw;
+      top:10vh;
+  }
+
+  100% {
+      left: 95vw;
+      top: 20vh;
+  }
+}
+
+/* -------------------------------------------- sterrenhemel 1 ---------------------------------------------------------- */
+
+main > div:nth-of-type(2) div {
+    border-radius: 50%;
+  background:white;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  animation: glow1 1s ease-in-out infinite alternate; 
+}
+
+
+@keyframes glow1 {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bfbef0, 0 0 40px #bfbef0, 0 0 50px #bfbef0, 0 0 60px #bfbef0, 0 0 70px #bfbef0;
+    }
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0  70px 1px white, 0 0 80px 10px white, 0 0 90px 10px white;
+    }
+  } 
+
+
+main > div:nth-of-type(2) div:first-of-type {
+  top: 15vh;
+  left: 10vw;
+}
+
+main > div:nth-of-type(2) div:nth-of-type(2) {
+    top: 20vh;
+    left: 25vw;
+  }
+
+main > div:nth-of-type(2) div:nth-of-type(3) {
+  top: 35vh;
+  left: 30vw;
+}
+
+main > div:nth-of-type(2) div:nth-of-type(4) {
+    top: 40vh;
+    left: 45vw;
+  }
+
+main > div:nth-of-type(2) div:nth-of-type(5) {
+    top: 55vh;
+    left: 50vw;
+  }
+
+main > div:nth-of-type(2) div:nth-of-type(6) {
+    top: 60vh;
+    left: 65vw;
+  }
+main > div:nth-of-type(2) div:nth-of-type(7) {
+    top: 75vh;
+    left: 70vw;
+  }
+main > div:nth-of-type(2) div:nth-of-type(8) {
+    top: 80vh;
+    left: 85vw;
+  }
+main > div:nth-of-type(2) div:nth-of-type(9) {
+    top: 95vh;
+    left: 90vw;
+  }
+
+main > div:nth-of-type(2) div:nth-of-type(10) {
+    top: 30vh;
+    left: 15vw;
+  }
+main > div:nth-of-type(2) div:nth-of-type(11) {
+    top: 65vh;
+    left: 40vw;
+  }
+
+main > div:nth-of-type(2) div:nth-of-type(12) {
+  top: 20vh;
+  left: 35vw;
+}
+
+main > div:nth-of-type(2) div:nth-of-type(13) {
+    top: 80vh;
+    left: 20vw;
+  }
+
+main > div:nth-of-type(2) div:nth-of-type(14) {
+    top: 35vh;
+    left: 5vw;
+  }
+
+main > div:nth-of-type(2) div:nth-of-type(15) {
+    top: 40vh;
+    left: 60vw;
+  }
+main > div:nth-of-type(2) div:nth-of-type(16) {
+    top: 40vh;
+    left: 80vw;
+  }
+main > div:nth-of-type(2) div:nth-of-type(17) {
+    top: 10vh;
+    left: 30vw;
+  }
+main > div:nth-of-type(2) div:nth-of-type(18) {
+    top: 20vh;
+    left: 55vw;
+  }
+
+main > div:nth-of-type(2) div:nth-of-type(19) {
+    top: 10vh;
+    left: 90vw;
+  }
+
+  main > div:nth-of-type(2) div:nth-of-type(20) {
+    top: 5vh;
+    left: 60vw;
+  }
+
+
+  /* -------------------------------------------- sterrenhemel 1 ---------------------------------------------------------- */
+
+
+  main > div:nth-of-type(3) div {
+    border-radius: 50%;
+  background:white;
+  width: 2.5px;
+  height: 2.5px;
+  position: absolute;
+  animation: glow2 1s ease-in-out infinite alternate; 
+  animation-delay: 1s;
+}
+
+
+@keyframes glow2 {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bfbef0, 0 0 40px #bfbef0, 0 0 50px #bfbef0, 0 0 60px #bfbef0, 0 0 70px #bfbef0;
+    }
+    to {
+      box-shadow: 0 0 20px 3px #fff, 0 0 40px 4px white, 0 0 50px 5px white, 0 0 60px white, 0 0  70px  white, 0 0 80px  white, 0 0 90px white;
+    }
+  } 
+
+
+main > div:nth-of-type(3) div:first-of-type {
+  top: 50vh;
+  left: 15vw;
+}
+
+main > div:nth-of-type(3) div:nth-of-type(2) {
+    top: 50vh;
+    left: 95vw;
+  }
+
+main > div:nth-of-type(3) div:nth-of-type(3) {
+  top: 30vh;
+  left: 30vw;
+}
+
+main > div:nth-of-type(3) div:nth-of-type(4) {
+    top: 60vh;
+    left: 20vw;
+  }
+
+main > div:nth-of-type(3) div:nth-of-type(5) {
+    top: 70vh;
+    left: 80vw;
+  }
+
+main > div:nth-of-type(3) div:nth-of-type(6) {
+    top: 7.5vh;
+    left: 80vw;
+  }
+main > div:nth-of-type(3) div:nth-of-type(7) {
+    top: 15vh;
+    left: 20vw;
+  }
+main > div:nth-of-type(3) div:nth-of-type(8) {
+    top: 17.5vh;
+    left: 85vw;
+  }
+main > div:nth-of-type(3) div:nth-of-type(9) {
+    top: 70vh;
+    left: 7.5vw;
+  }
+
+main > div:nth-of-type(3) div:nth-of-type(10) {
+    top: 5vh;
+    left: 15vw;
+  }
+main > div:nth-of-type(3) div:nth-of-type(11) {
+    top: 10vh;
+    left: 85vw;
+  }
+
+main > div:nth-of-type(3) div:nth-of-type(12) {
+  top: 45vh;
+  left: 60vw;
+}
+
+main > div:nth-of-type(3) div:nth-of-type(13) {
+    top: 65vh;
+    left: 85vw;
+  }
+
+main > div:nth-of-type(3) div:nth-of-type(14) {
+    top: 10vh;
+    left: 65vw;
+  }
+
+main > div:nth-of-type(3) div:nth-of-type(15) {
+    top: 30vh;
+    left: 63vw;
+  }
+main > div:nth-of-type(3) div:nth-of-type(16) {
+    top:2.5vh;
+    left: 80vw;
+  }
+main > div:nth-of-type(3) div:nth-of-type(17) {
+    top: 2.5vh;
+    left: 10vw;
+  }
+main > div:nth-of-type(3) div:nth-of-type(18) {
+    top: 50vh;
+    left: 45vw;
+  }
+
+main > div:nth-of-type(3) div:nth-of-type(19) {
+    top: 20vh;
+    left: 20vw;
+  }
+
+  main > div:nth-of-type(3) div:nth-of-type(20) {
+    top: 75vh;
+    left: 60vw;
+  }
