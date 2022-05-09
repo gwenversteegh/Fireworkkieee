@@ -54,6 +54,7 @@ main section:first-of-type > div:first-of-type div {
     position: absolute;
     bottom: 0;
     cursor: pointer;
+    
 }
 
 
@@ -116,28 +117,14 @@ main > input[type="checkbox"]:first-of-type:checked ~ section:first-of-type > di
 /* ----------------- */
 
 main section:first-of-type > div:nth-of-type(2) {
-    position:absolute;
-    top:35vh;
-    left:10vw;
+    height: 170px; width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-content: center;
+    position: relative;
 }
 
-main section:first-of-type > div:nth-of-type(2) div {
-    position:absolute;
-    left: -2px;
-    bottom: 0;
-    
-    width: 4px;
-    height: 80px;
 
-    transform-origin: 50% 100%;
-    overflow: hidden;
-
-    transform: rotate(calc(30deg*var(--index))) translateY(-15px);
-}
-
-main section:first-of-type div:nth-of-type(2) div:nth-child(2n) {
-    height:80px;
-}
 
 main section:first-of-type div:nth-of-type(2) div:first-child {
     --index:0;
@@ -187,41 +174,48 @@ main section:first-of-type div:nth-of-type(2) div:nth-child(12) {
     --index:11;
 }
 
-main section:first-of-type div:nth-of-type(2) div::before {
-    content:'';
-    position: absolute;
-    top:100%;
-    left: 0;
-    right:0;
-    height:40px;
-    background-color:rgb(17, 0, 255);
-    border-radius: 50%;
 
-}
+
+@keyframes vuurwerk3 {
+    0% {
+      transform: scale(0) rotate(0deg) ;
+    }
+    50% {
+      transform: scale(1) rotate(180deg);
+    }
+    100% {
+      transform: scale(0) rotate(359deg) ;
+    }
+  }
 
 /* -------------------------- */
 /* animatie vuurwerkje blauw  */
 /* -------------------------- */
 
-main > input[type="checkbox"]:first-of-type:checked ~ section:first-of-type > div:first-of-type + div div::before {
-    animation: explosie3 2.5s ease-in-out;  
+
+main > input[type="checkbox"]:first-of-type:checked ~ section:first-of-type > div:nth-of-type(2)  {
+    animation: vuurwerk3 2s ease-in-out ;
     animation-delay: 0.5s;
+animation-fill-mode: forwards;
 }
 
-main section:first-of-type div:nth-of-type(2) div:nth-child(2n)::before{
-    background-color: aqua;
-    height:100%;
+main > input[type="checkbox"]:first-of-type:checked ~ section:first-of-type > div:nth-of-type(2) div {
+    transform: scale(4); 
+    position: absolute;
+    left: 83px;
+    top: 15px;
+  
+    width: 4px;
+    height: 70px;
+    background-image: linear-gradient(#f200ff, #00f7ff);
+  
+    transform-origin: 50% 100%;
+    overflow: hidden;
+    border-radius: 2px;
+  
+    transform: rotate(calc(30deg * var(--index))) translateY(-15px);
 }
 
-@keyframes explosie3 {
-    0% {
-        top: 100%;
-    }
-
-    33%, 100% {
-        top:-100%;
-    }
-}
 
 
 
@@ -395,7 +389,7 @@ main section:nth-of-type(2) div:nth-of-type(2) div::before {
     left: 0;
     right:0;
     height:40px;
-    background-color:darkred;
+    background-color:red;
 }
 
 /* ------------------------- */
@@ -409,7 +403,7 @@ main > input[type="checkbox"]:nth-of-type(2):checked ~ section:nth-of-type(2) > 
 }
 
 main section:nth-of-type(2) div:nth-of-type(2) div:nth-child(2n)::before{
-    background-color: red;
+    background-color: darkred;
     height:100%;
 }
 
