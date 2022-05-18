@@ -27,6 +27,11 @@ In het laatste feedback gesprek werd er gezegd dat ik nog puntjes op de i moest 
 
 <img width="300" alt="Screenshot 2022-03-09 at 14 12 55" src="https://user-images.githubusercontent.com/70900763/157448526-e9c3ab24-5443-4c7a-b3dc-40a8b1e634bd.png"> <img width="300" alt="Screenshot 2022-03-09 at 14 53 17" src="https://user-images.githubusercontent.com/70900763/157455266-3ead3a18-e7be-4a0b-b011-6f5fbbc62094.png"> <img width="300" alt="Screenshot 2022-03-09 at 14 13 20" src="https://user-images.githubusercontent.com/70900763/157448588-3b9c1d2a-b8c7-460e-b6c0-a79ca704f8c2.png">
 
+### herkansing
+Voor de herkansing had ik als feedback om meer te experimenteren met verschillende soorten vuurwerk en de vuurwerkpotten aan te passen. Ik heb de vuurwerkpotten 3D gemaakt en verschillende vuurwerkjes gemaakt. Ook heb ik de eindknal aangepast.
+
+<img width="1440" alt="Screenshot 2022-05-18 at 09 15 38" src="https://user-images.githubusercontent.com/70900763/168979803-76630728-580f-4afb-8ddb-253a571d6798.png"> <img width="1440" alt="Screenshot 2022-05-18 at 09 15 57" src="https://user-images.githubusercontent.com/70900763/168979878-68b75d75-d3a5-4676-ab2a-65bf3a8ade4e.png"><img width="1440" alt="Screenshot 2022-05-18 at 09 16 56" src="https://user-images.githubusercontent.com/70900763/168980045-7c7511e7-2cfc-4eee-99b8-035165c3d8fd.png">
+
 
 ## Wat heb ik geleerd?
 - [ ] Het gebruik van checkboxes
@@ -34,6 +39,7 @@ In het laatste feedback gesprek werd er gezegd dat ik nog puntjes op de i moest 
 - [ ] Gebruik maken van clippath
 - [ ] Verschillende soorten animaties
 - [ ] moeilijkere animaties
+- [ ] 3D objecten
 
 ## wat ging goed en wat minder?
 Zoals ik al eerder zei was het voor mij best een uitdaging. Ik heb niet heel veel ervaring met css buiten de standaard vakken die je krijgt in het 1e en 2e jaar bij CMD. Het was in het begin dus ook echt wel even wennen. De eerste week ging het minst goed. Ik zat thuis met corona en daardoor kon ik minder dingen vragen en heb ik een kleine achterstand opgelopen. Dit heb ik wel weer ingehaald in de rest van de weken gelukkig die beter gingen. Bij de sterrenhemel had ik nog meer sterren met animatie, maar het vuurwerk werd hierdoor heel sloom helaas.
